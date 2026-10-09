@@ -1,0 +1,30 @@
+{
+  "name": "Example Advertiser",
+  "currency": "EUR",
+  "account_currency": "USD",
+  "fx_fallback": 1.08,
+  "schedule": { "2026-03": 6000, "2026-04": 7500 },
+  "channels": {
+    "meta": {
+      "ad_account_id": "act_REPLACE_ME",
+      "share": { "default": 0.7, "2026-04": 0.65 },
+      "floor_daily": 10,
+      "ceiling_daily": 200,
+      "exclude": ["Other Market"],
+      "hold": {},
+      "lead_action": "offsite_conversion.custom.REPLACE_ME",
+      "performance": { "enabled": true, "lookback_days": 14, "prior_spend": 300, "mult_bounds": [0.5, 2.0] }
+    },
+    "google": {
+      "customer_id": "REPLACE_ME",
+      "share": 0.3,
+      "floor_daily": 10,
+      "ceiling_daily": 120,
+      "hold": { "Brand": 20 },
+      "performance": { "enabled": true, "lookback_days": 14, "prior_spend": 300, "mult_bounds": [0.5, 2.0] },
+      "share_auto": { "min": 0.25, "max": 0.40, "elasticity": 0.5 }
+    }
+  },
+  "guardrails": { "max_step": 0.30, "utilization_floor": 0.5, "max_util_boost": 1.5, "overshoot_alert": 1.05 },
+  "analytics": { "ga4": { "property_id": "REPLACE_ME", "conversion_events": ["generate_lead", "phone_click"] } }
+}

@@ -1,0 +1,30 @@
+{
+  "fx": 1.08,
+  "channels": {
+    "meta": {
+      "mtd": 1900, "recent": 960,
+      "entities": [
+        {"id": "m1", "name": "Prospecting A", "current": 60},
+        {"id": "m2", "name": "Prospecting B", "current": 60},
+        {"id": "m3", "name": "Retargeting", "current": 30},
+        {"id": "m4", "name": "Other Market Test", "current": 40}
+      ],
+      "perf": {
+        "m1": {"spend": 600, "leads": 30},
+        "m2": {"spend": 600, "leads": 10},
+        "m3": {"spend": 300, "leads": 15}
+      }
+    },
+    "google": {
+      "mtd": 900, "recent": 330,
+      "entities": [
+        {"id": "g1", "name": "Brand", "current": 20},
+        {"id": "g2", "name": "Generic Search", "current": 40}
+      ],
+      "perf": {
+        "g1": {"spend": 280, "leads": 14},
+        "g2": {"spend": 560, "leads": 12}
+      }
+    }
+  }
+}

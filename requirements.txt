@@ -1,0 +1,6 @@
+# Core pacer uses the standard library only (certifi is used if present).
+certifi
+# Needed only for live Google Ads access:
+google-ads
+# Needed only for lead_snapshot.py:
+google-auth

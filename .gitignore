@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+state/
+__pycache__/
+*.pyc
+.venv/
+*.secret*
